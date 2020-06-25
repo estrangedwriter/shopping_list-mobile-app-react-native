@@ -5,3 +5,4 @@
 
 ##### Built on Ubuntu Linux version 20 (i need a better mac lol)
 
+![screenshots](/images/screencapture1.png)
