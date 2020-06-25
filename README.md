@@ -1,3 +1,7 @@
-# bitbroker-mobile-app
+# shopping_list-mobile-app-react-native
 
-![screencapture](/home/jerome/Pictures/screencapture.png)
+## This is a quick mobile app that I built using React-Native. It is a shopping list that can add or remove items. 
+
+
+
+
