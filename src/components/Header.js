@@ -1,18 +1,19 @@
 import React from 'react';
-import { View, Text, StyleSheet} from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
-const Header = ({title, followers, following}) => {
+const Header = ({name, followers, following}) => {
   return ( 
-    <View style={styles.header}>
-      <Text style={styles.text}>{title}</Text>
-      <Text style={styles.followers}>{followers}</Text>
-      <Text style={styles.following}>{following}</Text>
-    </View>
+      <View style={styles.header}>
+        <Text style={styles.text}>{name}</Text>
+        <Text style={styles.followers}>{followers}</Text>
+        <Text style={styles.following}>{following}</Text>
+      </View>
   );
 };
 
+
 Header.defaultProps = {
-    title: 'Parker Miller',
+    name: 'Parker Miller',
     following: 'Following',
     followers: 'Followers'
 }
@@ -43,8 +44,10 @@ const styles = StyleSheet.create({
   following: {
     color: '#F08080',
     fontSize: 17,
-    textAlign: 'right',
-    fontWeight: 'bold',
+    textAlign:'right',
+    fontWeight:'bold',
+    marginTop:-20,
+    marginLeft:0,
   },
 });
 
