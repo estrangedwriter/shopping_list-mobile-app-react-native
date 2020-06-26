@@ -14,8 +14,12 @@ const ListItem = ({item, deleteItem}) => {
                 <Text style = {styles.FollowingStyle}>Following</Text>
             </View>
             
-            {/*<View style = {styles.shadow}/>   */}
-            
+            <View style = {styles.shadow}/>  
+
+            <Text style = {styles.stats}>{item.stats}</Text>
+            <Image source = {{uri: item.imageURL}} style = {styles.img}/>
+
+            <Text style = {styles.username}> {item.username}</Text>
         </View> 
     </TouchableOpacity>
   );
@@ -35,19 +39,35 @@ const styles = StyleSheet.create({
     listItemText: {
         fontSize: 18,
         fontWeight: 'bold',
-        bottom: 25,
+        bottom: 20,
         left: 80,
         textAlign: 'left',
         },
 
     subtitles: {
+        marginTop: 5,
         textAlign: 'left',
         fontSize: 14,
         color: 'grey',
-        bottom:10,
+        bottom: 13,
         left: 80,
         },
+        
+    username: {    
+        textAlign: 'left',
+        fontSize: 12,
+        color: 'grey',
+        bottom: 85,
+        left: 75,
+    },
 
+    stats: {
+        textAlign: 'left', 
+        fontSize: 14,
+        color: 'grey',
+        bottom: 5,
+        left: 80,
+    },
     myButton:{
         padding: 5,
         width: 75,
@@ -67,28 +87,26 @@ const styles = StyleSheet.create({
         },
 
     shadow: {
-          height: 30,
-          width: 30,
+          height: 60,
+          width: 60,
           backgroundColor: 'white',
-          borderRadius: 40,
-          position: 'relative',
-          right: -30,
-          bottom: 0,
-          right: 30,
+          borderRadius: 30,
+          left: 10,
+          top: -10,
+          position: 'absolute',
           elevation: 19,
-          
         },
+
     img: {
+        height: 56,
+        width: 56,
         backgroundColor: 'white',
-        borderRadius: 30,
-        borderWidth: 2,
-        borderColor: 'white',
-        width: 60,
-        height: 60,
-        right: 15,
-        top: -40,
+        borderRadius: 28,
+        left: 11,
+        top: -9,
+        position: 'absolute',
         elevation: 20,
-        },
+    },
 
 });
 

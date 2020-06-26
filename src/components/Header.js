@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderBottomWidth: 1,
     borderBottomColor: '#DCDCDC',
+    
   },
   text: {
       color: '#F08080',
@@ -60,6 +61,7 @@ const styles = StyleSheet.create({
     marginTop:-20,
     marginRight:30,
   },
+
   icon: {
     textAlign:'left',
     marginTop:-65,
