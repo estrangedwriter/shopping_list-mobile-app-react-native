@@ -6,10 +6,12 @@ import AddItem from './components/AddItem';
 
 const App = () => {
   const [items, setItems] = useState([
-    {id: '1', text: 'Milk' },
-    {id: '2', text: 'Eggs' },
-    {id: '3', text: 'Bread' },
-    {id: '4',text: 'Juice' },
+    {id: '1', text: 'Entrepreneur' },
+    {id: '2', text: "Oprah's Book Club"},
+    {id: '3', text: 'Sports 24/7' },
+    {id: '4',text: "Women's fitness tips" },
+    {id: '5', text: "Men's Health"},
+    {id: '6', text: "Black Lives Matter"},
   ]);
 
 
@@ -32,7 +34,6 @@ const addItem = (text) => {
   return ( 
     <View style={styles.container}>
       <Header/>
-      <AddItem addItem={addItem} />
       <FlatList 
         data={items} 
         renderItem={({item}) => (

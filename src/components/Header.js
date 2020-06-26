@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 const Header = ({name, followers, following}) => {
   return ( 
@@ -7,6 +8,16 @@ const Header = ({name, followers, following}) => {
         <Text style={styles.text}>{name}</Text>
         <Text style={styles.followers}>{followers}</Text>
         <Text style={styles.following}>{following}</Text>
+        <Icon name="chevron-left" 
+            size = {21} 
+            color = '#708090'
+            style = {styles.icon} >
+        </Icon>
+        <Icon name = "ellipsis-h"
+          size = {21}
+          color = '#708090'
+          style = {styles.ellipsis} >
+        </Icon>
       </View>
   );
 };
@@ -39,7 +50,7 @@ const styles = StyleSheet.create({
       textAlign:'left',
       fontWeight:'bold',
       marginTop:20,
-      marginLeft:0,
+      marginLeft:15,
   },
   following: {
     color: '#F08080',
@@ -47,8 +58,18 @@ const styles = StyleSheet.create({
     textAlign:'right',
     fontWeight:'bold',
     marginTop:-20,
-    marginLeft:0,
+    marginRight:30,
   },
+  icon: {
+    textAlign:'left',
+    marginTop:-65,
+    marginLeft: -30,
+  }, 
+  ellipsis: {
+    textAlign:'right',
+    marginTop: -25,
+    marginRight: -15,
+  } 
 });
 
 export default Header;
