@@ -6,8 +6,11 @@ const Header = ({name, followers, following}) => {
   return ( 
       <View style={styles.header}>
         <Text style={styles.text}>{name}</Text>
+
         <Text style={styles.followers}>{followers}</Text>
+
         <Text style={styles.following}>{following}</Text>
+
         <Icon name="chevron-left" 
             size = {21} 
             color = '#708090'
@@ -18,6 +21,7 @@ const Header = ({name, followers, following}) => {
           color = '#708090'
           style = {styles.ellipsis} >
         </Icon>
+        <View style = {styles.border}/>
       </View>
   );
 };
@@ -35,14 +39,24 @@ const styles = StyleSheet.create({
     padding: 50,
     backgroundColor: 'white',
     borderBottomWidth: 1,
-    borderBottomColor: '#DCDCDC',
-    
+    borderBottomColor: '#A9A9A9',
+  },
+  border: {
+    position: 'absolute',
+    padding: 0,
+    height: 0,
+    right: 0,
+    width: 200,
+    bottom: 0,
+    borderBottomColor: '#F08080',
+    borderBottomWidth: 3,
+    backgroundColor: 'black',
   },
   text: {
       color: '#F08080',
       fontSize: 22,
       textAlign: 'center',
-      marginTop: -40,
+      top: -35,
       fontWeight: 'bold',
   },
   followers: {
@@ -50,27 +64,27 @@ const styles = StyleSheet.create({
       fontSize: 17,
       textAlign:'left',
       fontWeight:'bold',
-      marginTop:20,
-      marginLeft:15,
+      top:-12,
+      left: 30,
   },
   following: {
     color: '#F08080',
     fontSize: 17,
     textAlign:'right',
     fontWeight:'bold',
-    marginTop:-20,
-    marginRight:30,
+    top: -35,
+    right: 15,
   },
 
   icon: {
     textAlign:'left',
-    marginTop:-65,
-    marginLeft: -30,
+    bottom: 108,
+    left: -30,
   }, 
   ellipsis: {
     textAlign:'right',
-    marginTop: -25,
-    marginRight: -15,
+    bottom: 130,
+    left: 20,
   } 
 });
 

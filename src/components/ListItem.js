@@ -1,8 +1,8 @@
 import React from 'react';
 import { Image, View, Text, StyleSheet, TouchableOpacity} from 'react-native';
-import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
-const ListItem = ({item, deleteItem}) => {
+
+const ListItem = ({item}) => {
   return ( 
     <TouchableOpacity style={styles.listItem}>
         <View>
@@ -49,13 +49,13 @@ const styles = StyleSheet.create({
         textAlign: 'left',
         fontSize: 14,
         color: 'grey',
-        bottom: 13,
+        bottom: 15,
         left: 80,
         },
         
     username: {    
         textAlign: 'left',
-        fontSize: 12,
+        fontSize: 11,
         color: 'grey',
         bottom: 85,
         left: 75,

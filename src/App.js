@@ -29,22 +29,6 @@ const App = () => {
   ]);
 
 
-const deleteItem = id => {
-  setItems(prevItems => {
-    return prevItems.filter(item=> item.id != id);
-  });
-}
-
-const addItem = (text) => {
-  if(!text) {
-    Alert.alert('Error', 'Please enter an item', { text: 'Ok'});
-  } else {
-  setItems(prevItems => {
-    return [{id: '5', text}, ...prevItems];
-  });
- }
-}
-
   return ( 
     <View style={styles.container}>
       <Header/>
