@@ -2,13 +2,12 @@ import React, {useState} from 'react';
 import { View, Text, FlatList, StyleSheet, Alert} from 'react-native';
 import Header from './components/Header';
 import ListItem from './components/ListItem';
-import AddItem from './components/AddItem';
 
 const App = () => {
   const [items, setItems] = useState([
     {id: '1', text: 'Entrepreneur', subtitle: "A group of builders talking about what they've\nbuilt already and what's still ahead", 
     stats: "8 Members   1.2M Thanks   57k Followers",
-    imageURL: 'https://mcgrawhillprofessionalbusinessblog.com/wp-content/uploads/2018/08/What-Is-The-Best-Time-In-History-To-Become-An-Entrepreneur-770x500.jpg' },
+    imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYRldrYp8rAUVWdWEYkuoir3abUwsskDC76g&usqp=CAU' },
 
     {id: '3', text: "Oprah's Book Club", subtitle: "Highlights books chosen by Oprah Winfrey\nsince 1996",
     stats: "6 Members   1M Thanks   49k Followers",

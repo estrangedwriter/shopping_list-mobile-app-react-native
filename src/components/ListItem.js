@@ -28,7 +28,6 @@ const ListItem = ({item}) => {
 
 const styles = StyleSheet.create({
     listItem: {
-        // padding: 20,
         marginTop: 30,
         height: 90,
         backgroundColor: 'white',
@@ -102,8 +101,8 @@ const styles = StyleSheet.create({
         width: 56,
         backgroundColor: 'white',
         borderRadius: 28,
-        left: 11,
-        top: -9,
+        left: 12,
+        top: -8,
         position: 'absolute',
         elevation: 20,
     },
