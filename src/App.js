@@ -6,12 +6,11 @@ import AddItem from './components/AddItem';
 
 const App = () => {
   const [items, setItems] = useState([
-    {id: '1', text: 'Entrepreneur' },
-    {id: '2', text: "Oprah's Book Club"},
-    {id: '3', text: 'Sports 24/7' },
-    {id: '4',text: "Women's fitness tips" },
-    {id: '5', text: "Men's Health"},
-    {id: '6', text: "Black Lives Matter"},
+    {id: '1', text: 'Entrepreneur', subtitle: "A group of builders talking about what they've\nbuilt already and what's still ahead"} ,
+    {id: '3', text: "Oprah's Book Club", subtitle: "Highlights books chosen by Oprah Winfrey\nsince 1996"},
+    {id: '5', text: 'Sports 24/7' , subtitle: "The leading group of sports experts covering\neverything you love from football to boxing"},
+    {id: '7',text: "Women's fitness tips", subtitle: "Fitness professionals who will show YOU how to\nget that rockin' BOD you been waitin' for!" },
+    {id: '9', text: "Parker Miller", subtitle: "Husband. Father. Product creator. Stanford + BYU\nalum." },
   ]);
 
 
@@ -36,9 +35,7 @@ const addItem = (text) => {
       <Header/>
       <FlatList 
         data={items} 
-        renderItem={({item}) => (
-        <ListItem item = {item} deleteItem = {deleteItem}/>
-        )}
+        renderItem={({item}) => ( <ListItem item = {item}/>)}
       />
       
     </View>
