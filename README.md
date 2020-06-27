@@ -30,6 +30,7 @@ https://github.com/oblador/react-native-vector-icons#android
 
 3. Use the following commands in the src directory to start the app: 
 >npx react-native start 
+
 >npx react-native run-android
   
   Please let me know if you are having trouble getting the app to run.
