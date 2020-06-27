@@ -36,7 +36,6 @@ const App = () => {
     username: "@heypmiller"},
   ]);
 
-
   return ( 
     <View style={styles.container}>
       <Header/>

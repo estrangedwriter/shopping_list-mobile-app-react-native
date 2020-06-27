@@ -10,8 +10,7 @@ import React from 'react';
 import {Image, View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 const ListItem = ({item}) => {
-  return ( 
-    
+  return (     
     <View style = {styles.listItem}>
         
         <Text style={styles.listItemName}>{item.text}</Text>
@@ -43,22 +42,21 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         borderBottomWidth: 1,
         borderColor: '#D9D9D9',
-        },
+    },
 
     listItemName: {
+        position: 'absolute',
         fontSize: 18,
+        color: 'black',
         fontWeight: 'bold',
         top: 10,
         left: 80,
-        textAlign: 'left',
-        position: 'absolute',
-        },
+    },
     /* For the @heypmiller username */
     username: {    
-        textAlign: 'left',
+        position: 'absolute',
         fontSize: 11,
         color: 'grey',
-        position: 'absolute',
         top: 30,
         left: 75,
         elevation: 1,
@@ -77,20 +75,18 @@ const styles = StyleSheet.create({
     },
 
         description: {
-            top: 3,
             position: 'absolute',
-            textAlign: 'left',
             fontSize: 14,
             color: 'grey',
+            top: 3,
             left: 1,
-            },
+        },
 
         stats: {
-            textAlign: 'left', 
+            position: 'absolute',
             fontSize: 14,
             color: 'grey',
             bottom: 7,
-            position: 'absolute',
             left: 1,
         },
     /**/
@@ -103,7 +99,7 @@ const styles = StyleSheet.create({
         right: 10,
         top: 8,
         position: 'absolute',
-        },
+    },
     /* Text for the "Following" button"*/
     ButtonText: {
           color:'white',

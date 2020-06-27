@@ -7,7 +7,7 @@
 */
 
 import React from 'react';
-import { View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 const Header = ({name, followers, following}) => {
@@ -15,11 +15,8 @@ const Header = ({name, followers, following}) => {
       <View style={styles.header}>
         
         <Text style={styles.name}>{name}</Text>
-
         <Text style={styles.followers}>{followers}</Text>
-
         <Text style={styles.following}>{following}</Text>
-      
         <Icon name="chevron-left" 
             size = {21} 
             color = '#708090'
@@ -30,12 +27,11 @@ const Header = ({name, followers, following}) => {
           color = '#708090'
           style = {styles.ellipsis} >
         </Icon>
-
         <View style = {styles.followingborder}/>
+      
       </View>
   );
 };
-
 
 Header.defaultProps = {
     name: 'Parker Miller',
