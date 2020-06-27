@@ -1,38 +1,36 @@
 import React from 'react';
 import {Image, View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
-
-const ListItem = ({item}) => {
+const ListItem = ({item, followers, following}) => {
   return ( 
     
     <View style = {styles.listItem}>
         
         <Text style={styles.listItemName}>{item.text}</Text>
-
         <Image source = {{uri: item.emoji}} style={styles.emoji}></Image>
-
-        <Text style = {styles.description}>{item.subtitle}</Text>     
-        
-        <TouchableOpacity style = {styles.myButton}>
-            <View>
-                <Text style = {styles.FollowingStyle}>Following</Text>
-            </View>
-        </TouchableOpacity>
-        
+        <Text style = {styles.username}> {item.username}</Text>        
         <View style = {styles.shadow}/>  
         <Image source = {{uri: item.imageURL}} style = {styles.img}/>
 
+        <TouchableOpacity style = {styles.myButton}>
+            <View>
+                <Text style = {styles.ButtonText}>{following}</Text>
+            </View>
+        </TouchableOpacity>
 
-        <Text style = {styles.stats}>{item.stats}</Text>
-        
-        <Text style = {styles.username}> {item.username}</Text>
+        <View style = {styles.textcontainer}>
+            <Text style = {styles.description}>{item.description}</Text>  
+            <Text style = {styles.stats}>{item.stats}</Text>
+        </View>
     
     </View>
-
-    
   );
 };
 
+ListItem.defaultProps = {
+    following: 'Following',
+    followers: 'Followers'
+}
 
 const styles = StyleSheet.create({
     listItem: {
@@ -46,47 +44,62 @@ const styles = StyleSheet.create({
     listItemName: {
         fontSize: 18,
         fontWeight: 'bold',
-        bottom: 20,
+        bottom: 21,
         left: 80,
         textAlign: 'left',
         },
 
     description: {
-        marginTop: 5,
+        top: 3,
+        position: 'absolute',
         textAlign: 'left',
         fontSize: 14,
         color: 'grey',
-        bottom: 15,
-        left: 80,
+        left: 1,
         },
         
     username: {    
         textAlign: 'left',
         fontSize: 11,
         color: 'grey',
-        bottom: 84,
+        position: 'absolute',
+        top: 0,
         left: 75,
+        elevation: 1,
     },
 
     stats: {
         textAlign: 'left', 
         fontSize: 14,
         color: 'grey',
-        bottom: 5,
-        left: 80,
+        bottom: 7,
+        position: 'absolute',
+        left: 1,
+        // left: 80,
     },
+    textcontainer: {
+        backgroundColor: 'white',
+        borderColor: 'black',
+        borderWidth: 0,
+        height: 75,
+        position: 'absolute',
+        width: 300,
+        right: 33,
+        bottom: 5,
+        elevation: 0,
+    },
+
     myButton:{
         padding: 5,
         width: 75,
-        borderRadius:20,
+        borderRadius: 20,
         backgroundColor:'#FF5959',
         right: 10,
-        top: -27,
-        marginTop: 5,
+        top: -22,
         position: 'absolute',
         },
 
-    FollowingStyle: {
+    ButtonText: {
           color:'white',
           fontSize: 13,
           textAlign: 'center',
@@ -98,7 +111,7 @@ const styles = StyleSheet.create({
           backgroundColor: 'white',
           borderRadius: 30,
           left: 10,
-          top: -10,
+          top: -14,
           position: 'absolute',
           elevation: 17,
         },
@@ -109,7 +122,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         borderRadius: 28,
         left: 12,
-        top: -8,
+        top: -12,
         position: 'absolute',
         elevation: 30,
     },
