@@ -7,7 +7,7 @@ react native challenge
 
 using react native, create 1 screen that looks like the below:
 
-![screenshot](/images/Screen%20Shot%202020-06-16%20at%206.22.45%20PM.png)
+![screenshot](/images/Screen%20Shot%202020-06-16%20at%206.22.45%20PM.png = 500x300)
 
 the items should be scrollable
 
