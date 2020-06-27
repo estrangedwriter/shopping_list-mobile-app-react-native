@@ -10,7 +10,7 @@ const Header = ({name, followers, following}) => {
         <Text style={styles.followers}>{followers}</Text>
 
         <Text style={styles.following}>{following}</Text>
-
+      
         <Icon name="chevron-left" 
             size = {21} 
             color = '#708090'
@@ -48,16 +48,17 @@ const styles = StyleSheet.create({
     right: 0,
     width: 200,
     bottom: 0,
-    borderBottomColor: '#F08080',
+    borderBottomColor: '#FF5959',
     borderBottomWidth: 3,
-    backgroundColor: 'black',
   },
+
   text: {
-      color: '#F08080',
+      color: '#FF5959',
       fontSize: 22,
       textAlign: 'center',
       top: -35,
       fontWeight: 'bold',
+      fontFamily: 'Normal'
   },
   followers: {
       color: 'black',
@@ -68,7 +69,7 @@ const styles = StyleSheet.create({
       left: 30,
   },
   following: {
-    color: '#F08080',
+    color: '#FF5959',
     fontSize: 17,
     textAlign:'right',
     fontWeight:'bold',

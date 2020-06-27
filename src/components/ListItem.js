@@ -6,21 +6,27 @@ const ListItem = ({item}) => {
   return ( 
     <TouchableOpacity style={styles.listItem}>
         <View>
-            <Text style={styles.listItemText}>{item.text}</Text>
+            
+            <Text style={styles.listItemName}>{item.text}</Text>
 
-            <Text style = {styles.subtitles}>{item.subtitle}</Text>     
+            <Image source = {{uri: item.emoji}} style={styles.emoji}></Image>
+
+            <Text style = {styles.description}>{item.subtitle}</Text>     
     
             <View style ={styles.myButton}>
                 <Text style = {styles.FollowingStyle}>Following</Text>
             </View>
             
             <View style = {styles.shadow}/>  
-
-            <Text style = {styles.stats}>{item.stats}</Text>
             <Image source = {{uri: item.imageURL}} style = {styles.img}/>
 
+
+            <Text style = {styles.stats}>{item.stats}</Text>
+            
             <Text style = {styles.username}> {item.username}</Text>
-        </View> 
+        
+        </View>
+
     </TouchableOpacity>
   );
 };
@@ -32,10 +38,10 @@ const styles = StyleSheet.create({
         height: 90,
         backgroundColor: 'white',
         borderBottomWidth: 1,
-        borderColor: 'grey',
+        borderColor: '#D9D9D9',
         },
 
-    listItemText: {
+    listItemName: {
         fontSize: 18,
         fontWeight: 'bold',
         bottom: 20,
@@ -43,7 +49,7 @@ const styles = StyleSheet.create({
         textAlign: 'left',
         },
 
-    subtitles: {
+    description: {
         marginTop: 5,
         textAlign: 'left',
         fontSize: 14,
@@ -56,7 +62,7 @@ const styles = StyleSheet.create({
         textAlign: 'left',
         fontSize: 11,
         color: 'grey',
-        bottom: 85,
+        bottom: 84,
         left: 75,
     },
 
@@ -71,11 +77,11 @@ const styles = StyleSheet.create({
         padding: 5,
         width: 75,
         borderRadius:20,
-        backgroundColor:'#F08080',
+        backgroundColor:'#FF5959',
         right: 10,
-        top: -30,
+        top: -27,
         marginTop: 5,
-        elevation: 5,
+        
         position: 'absolute',
         },
 
@@ -93,7 +99,7 @@ const styles = StyleSheet.create({
           left: 10,
           top: -10,
           position: 'absolute',
-          elevation: 19,
+          elevation: 17,
         },
 
     img: {
@@ -104,9 +110,16 @@ const styles = StyleSheet.create({
         left: 12,
         top: -8,
         position: 'absolute',
-        elevation: 20,
+        elevation: 30,
     },
 
+    emoji: {
+        height: 24,
+        width: 20,
+        left: 192,
+        top: -21,
+        position: 'absolute',
+    },
 });
 
 export default ListItem;

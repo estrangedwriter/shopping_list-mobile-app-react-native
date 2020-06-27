@@ -7,7 +7,8 @@ const App = () => {
   const [items, setItems] = useState([
     {id: '1', text: 'Entrepreneur', subtitle: "A group of builders talking about what they've\nbuilt already and what's still ahead", 
     stats: "8 Members   1.2M Thanks   57k Followers",
-    imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYRldrYp8rAUVWdWEYkuoir3abUwsskDC76g&usqp=CAU' },
+    imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTYRldrYp8rAUVWdWEYkuoir3abUwsskDC76g&usqp=CAU',
+    emoji: 'https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/ship.png' },
 
     {id: '3', text: "Oprah's Book Club", subtitle: "Highlights books chosen by Oprah Winfrey\nsince 1996",
     stats: "6 Members   1M Thanks   49k Followers",
