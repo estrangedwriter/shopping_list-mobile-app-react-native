@@ -1,7 +1,7 @@
 # BitBroker React Native Challenge
-##### Built on Ubuntu Linux version 20 
+#### Built on Ubuntu Linux version 20 
 
-#### Overview 
+### Overview 
 
 react native challenge
 
@@ -15,8 +15,8 @@ after you have emailed the video demonstration, a team member will go over the n
 best of luck!
 
 
-#### Quick start
-##### Installation and configuration in order to clone and run this application
+### Quick start
+#### Installation and configuration to clone and run this application
 
 1. Install and set up the environment. Requires JDK, Android Studio (Android SDK, Android SDK Platform, and Android Virtual Device comes with Studio), and Watchman.  https://reactnative.dev/docs/environment-setup 
 
@@ -30,5 +30,6 @@ https://github.com/oblador/react-native-vector-icons#android
   
   Please let me know if you are having trouble getting the app to run.
 
-#### Results
-![result](/images/react-native-challenge-results.png/)
+### Results
+#### Side by side comparison (left is my app, right is given)
+![result](/images/react-native-challenge-results.png/) ![screenshot](/images/react-native-challenge.png)  
