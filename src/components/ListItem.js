@@ -1,33 +1,35 @@
 import React from 'react';
-import { Image, View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {Image, View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 
 const ListItem = ({item}) => {
   return ( 
-    <TouchableOpacity style={styles.listItem}>
-        <View>
-            
-            <Text style={styles.listItemName}>{item.text}</Text>
-
-            <Image source = {{uri: item.emoji}} style={styles.emoji}></Image>
-
-            <Text style = {styles.description}>{item.subtitle}</Text>     
     
-            <View style ={styles.myButton}>
+    <View style = {styles.listItem}>
+        
+        <Text style={styles.listItemName}>{item.text}</Text>
+
+        <Image source = {{uri: item.emoji}} style={styles.emoji}></Image>
+
+        <Text style = {styles.description}>{item.subtitle}</Text>     
+        
+        <TouchableOpacity style = {styles.myButton}>
+            <View>
                 <Text style = {styles.FollowingStyle}>Following</Text>
             </View>
-            
-            <View style = {styles.shadow}/>  
-            <Image source = {{uri: item.imageURL}} style = {styles.img}/>
-
-
-            <Text style = {styles.stats}>{item.stats}</Text>
-            
-            <Text style = {styles.username}> {item.username}</Text>
+        </TouchableOpacity>
         
-        </View>
+        <View style = {styles.shadow}/>  
+        <Image source = {{uri: item.imageURL}} style = {styles.img}/>
 
-    </TouchableOpacity>
+
+        <Text style = {styles.stats}>{item.stats}</Text>
+        
+        <Text style = {styles.username}> {item.username}</Text>
+    
+    </View>
+
+    
   );
 };
 
@@ -81,7 +83,6 @@ const styles = StyleSheet.create({
         right: 10,
         top: -27,
         marginTop: 5,
-        
         position: 'absolute',
         },
 
