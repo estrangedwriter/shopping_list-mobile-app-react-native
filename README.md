@@ -18,7 +18,7 @@ best of luck!
 ### Quick start
 #### Installation and configuration to clone and run this application
 
-1. Install and set up the environment. Requires JDK, Android Studio (Android SDK, Android SDK Platform, and Android Virtual Device comes with Studio), and Watchman.  https://reactnative.dev/docs/environment-setup 
+1. Install and set up the environment. Requires JDK, Android Studio (Android SDK, Android SDK Platform, and Android Virtual Device can be installed through Studio), and Watchman.  https://reactnative.dev/docs/environment-setup 
 
 2. Link additional dependencies such as UI libraries to the source directory of the application.
 https://github.com/oblador/react-native-vector-icons#android
