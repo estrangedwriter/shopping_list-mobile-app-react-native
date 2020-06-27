@@ -1,7 +1,15 @@
+/*
+** Bitbroker Labs React Native Challenge, 2020
+** 
+** File description: This ListItem.js file models the 'ListItem' component of the application.
+** 
+**
+*/
+
 import React from 'react';
 import {Image, View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
-const ListItem = ({item, followers, following}) => {
+const ListItem = ({item}) => {
   return ( 
     
     <View style = {styles.listItem}>
@@ -14,7 +22,7 @@ const ListItem = ({item, followers, following}) => {
 
         <TouchableOpacity style = {styles.myButton}>
             <View>
-                <Text style = {styles.ButtonText}>{following}</Text>
+                <Text style = {styles.ButtonText}>Following</Text>
             </View>
         </TouchableOpacity>
 
@@ -33,10 +41,9 @@ ListItem.defaultProps = {
 }
 
 const styles = StyleSheet.create({
-/* listItem is the div where all information for each item is displayed */
+/* listItem is the div where information for each item in the list is displayed */
     listItem: {
-        marginTop: 30,
-        height: 90,
+        height: 120,
         backgroundColor: 'white',
         borderBottomWidth: 1,
         borderColor: '#D9D9D9',
@@ -45,18 +52,18 @@ const styles = StyleSheet.create({
     listItemName: {
         fontSize: 18,
         fontWeight: 'bold',
-        top: -20,
+        top: 10,
         left: 80,
         textAlign: 'left',
         position: 'absolute',
         },
-
+    /* For the @heypmiller username */
     username: {    
         textAlign: 'left',
         fontSize: 11,
         color: 'grey',
         position: 'absolute',
-        top: 0,
+        top: 30,
         left: 75,
         elevation: 1,
     },
@@ -91,49 +98,51 @@ const styles = StyleSheet.create({
             left: 1,
         },
     /**/
+    /* For the "Following" button" */
     myButton:{
         padding: 5,
         width: 75,
         borderRadius: 20,
         backgroundColor:'#FF5959',
         right: 10,
-        top: -22,
+        top: 8,
         position: 'absolute',
         },
-
+    /* Text for the "Following" button"*/
     ButtonText: {
           color:'white',
           fontSize: 13,
           textAlign: 'center',
         },
-
+    /* In Android, there is no 'shadow' option, unlike iOS. To achieve a shadow 
+    effect and a border effect for the images , I made a blank white circle to be placed
+    underneath each image. Also, the white circle is 'elevated' which creates a shadow effect. */
     shadow: {
           height: 60,
           width: 60,
           backgroundColor: 'white',
           borderRadius: 30,
           left: 10,
-          top: -14,
+          top: 17,
           position: 'absolute',
           elevation: 17,
         },
-
     img: {
         height: 56,
         width: 56,
         backgroundColor: 'white',
         borderRadius: 28,
         left: 12,
-        top: -12,
+        top: 19,
         position: 'absolute',
-        elevation: 30,
+        elevation: 18,
     },
 
     emoji: {
         height: 24,
         width: 20,
         left: 192,
-        top: -21,
+        top: 8,
         position: 'absolute',
     },
 });

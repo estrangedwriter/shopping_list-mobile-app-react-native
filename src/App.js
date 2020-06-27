@@ -1,3 +1,11 @@
+/*
+** Bitbroker Labs React Native Challenge, 2020
+** 
+** File description: This App.js file is the main file that will render and run the react native challenge application.
+** 
+**
+*/
+
 import React, {useState} from 'react';
 import { View, FlatList, StyleSheet} from 'react-native';
 import Header from './components/Header';

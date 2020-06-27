@@ -1,5 +1,13 @@
+/*
+** Bitbroker Labs React Native Challenge, 2020
+** 
+** File description: This Header.js file models the 'header' component of the application.
+** 
+**
+*/
+
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import { View, Text, StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 const Header = ({name, followers, following}) => {
@@ -43,7 +51,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: '#A9A9A9',
   },
-
+/* styling for the user's name "Parker Miller"*/  
   name: {
       textAlign: 'center',
       color: '#FF5959',
@@ -52,19 +60,19 @@ const styles = StyleSheet.create({
       fontWeight: 'bold',
       fontFamily: 'Normal'
   },
-
+/* styling for the 'back' arrow button*/  
   chevron: {
     top: 20,
     left: 20,
     position: 'absolute',
   }, 
-
+/* styling for the 'ellipsis' menu button*/  
   ellipsis: {
     top: 20,
     right: 20,
     position: 'absolute',
   },
-
+/* styling for the followers text*/  
   followers: {
       position: 'absolute',
       color: 'black',
@@ -74,7 +82,7 @@ const styles = StyleSheet.create({
       bottom: 10,
       left: 65,
   },
-  
+/* styling for the following text*/  
   following: {
     position: 'absolute',
     color: '#FF5959',
@@ -84,7 +92,7 @@ const styles = StyleSheet.create({
     bottom: 10,
     right: 65,
   },
-  
+/* styling for the border underneath 'Following'*/  
   followingborder: {
     position: 'absolute',
     height: 0,
