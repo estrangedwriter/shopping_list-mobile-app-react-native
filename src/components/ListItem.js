@@ -35,10 +35,6 @@ const ListItem = ({item}) => {
   );
 };
 
-ListItem.defaultProps = {
-    following: 'Following',
-    followers: 'Followers'
-}
 
 const styles = StyleSheet.create({
 /* listItem is the div where information for each item in the list is displayed */
@@ -137,7 +133,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         elevation: 18,
     },
-
+    /*emoji after 'entrepreneur' */
     emoji: {
         height: 24,
         width: 20,
