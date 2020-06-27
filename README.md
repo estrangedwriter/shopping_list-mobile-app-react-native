@@ -28,8 +28,6 @@ best of luck!
 2. Link additional dependencies such as UI libraries to the source directory of the application.
 https://github.com/oblador/react-native-vector-icons#android
 
-3. 
-  >npx react-native start 
-  >npx react-native run-android
+3. >npx react-native start \n>npx react-native run-android
   
   Please let me know if the app has trouble to run.
