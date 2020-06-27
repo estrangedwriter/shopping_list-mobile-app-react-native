@@ -33,6 +33,7 @@ ListItem.defaultProps = {
 }
 
 const styles = StyleSheet.create({
+/* listItem is the div where all information for each item is displayed */
     listItem: {
         marginTop: 30,
         height: 90,
@@ -44,20 +45,12 @@ const styles = StyleSheet.create({
     listItemName: {
         fontSize: 18,
         fontWeight: 'bold',
-        bottom: 21,
+        top: -20,
         left: 80,
         textAlign: 'left',
+        position: 'absolute',
         },
 
-    description: {
-        top: 3,
-        position: 'absolute',
-        textAlign: 'left',
-        fontSize: 14,
-        color: 'grey',
-        left: 1,
-        },
-        
     username: {    
         textAlign: 'left',
         fontSize: 11,
@@ -67,16 +60,7 @@ const styles = StyleSheet.create({
         left: 75,
         elevation: 1,
     },
-
-    stats: {
-        textAlign: 'left', 
-        fontSize: 14,
-        color: 'grey',
-        bottom: 7,
-        position: 'absolute',
-        left: 1,
-        // left: 80,
-    },
+    /* div that stores and organizes the text within ListItem*/
     textcontainer: {
         backgroundColor: 'white',
         borderColor: 'black',
@@ -89,6 +73,24 @@ const styles = StyleSheet.create({
         elevation: 0,
     },
 
+        description: {
+            top: 3,
+            position: 'absolute',
+            textAlign: 'left',
+            fontSize: 14,
+            color: 'grey',
+            left: 1,
+            },
+
+        stats: {
+            textAlign: 'left', 
+            fontSize: 14,
+            color: 'grey',
+            bottom: 7,
+            position: 'absolute',
+            left: 1,
+        },
+    /**/
     myButton:{
         padding: 5,
         width: 75,

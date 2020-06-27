@@ -5,7 +5,8 @@ import Icon from 'react-native-vector-icons/dist/FontAwesome';
 const Header = ({name, followers, following}) => {
   return ( 
       <View style={styles.header}>
-        <Text style={styles.text}>{name}</Text>
+        
+        <Text style={styles.name}>{name}</Text>
 
         <Text style={styles.followers}>{followers}</Text>
 
@@ -14,14 +15,15 @@ const Header = ({name, followers, following}) => {
         <Icon name="chevron-left" 
             size = {21} 
             color = '#708090'
-            style = {styles.icon} >
+            style = {styles.chevron} >
         </Icon>
         <Icon name = "ellipsis-h"
           size = {21}
           color = '#708090'
           style = {styles.ellipsis} >
         </Icon>
-        <View style = {styles.border}/>
+
+        <View style = {styles.followingborder}/>
       </View>
   );
 };
@@ -34,59 +36,64 @@ Header.defaultProps = {
 }
 
 const styles = StyleSheet.create({
+/* primary div for the header component*/  
   header: {
-    height: 50,
-    padding: 50,
+    height: 100,
     backgroundColor: 'white',
     borderBottomWidth: 1,
     borderBottomColor: '#A9A9A9',
   },
-  border: {
-    position: 'absolute',
-    padding: 0,
-    height: 0,
-    right: 0,
-    width: 200,
-    bottom: 0,
-    borderBottomColor: '#FF5959',
-    borderBottomWidth: 3,
-  },
 
-  text: {
+  name: {
+      textAlign: 'center',
       color: '#FF5959',
       fontSize: 22,
-      textAlign: 'center',
-      top: -35,
+      top: 12,
       fontWeight: 'bold',
       fontFamily: 'Normal'
   },
+
+  chevron: {
+    top: 20,
+    left: 20,
+    position: 'absolute',
+  }, 
+
+  ellipsis: {
+    top: 20,
+    right: 20,
+    position: 'absolute',
+  },
+
   followers: {
+      position: 'absolute',
       color: 'black',
       fontSize: 17,
       textAlign:'left',
       fontWeight:'bold',
-      top:-12,
-      left: 30,
+      bottom: 10,
+      left: 65,
   },
+  
   following: {
+    position: 'absolute',
     color: '#FF5959',
     fontSize: 17,
     textAlign:'right',
     fontWeight:'bold',
-    top: -35,
-    right: 15,
+    bottom: 10,
+    right: 65,
   },
-
-  icon: {
-    textAlign:'left',
-    bottom: 108,
-    left: -30,
-  }, 
-  ellipsis: {
-    textAlign:'right',
-    bottom: 130,
-    left: 20,
-  } 
+  
+  followingborder: {
+    position: 'absolute',
+    height: 0,
+    right: 0,
+    width: 205,
+    bottom: 0,
+    borderBottomColor: '#FF5959',
+    borderBottomWidth: 3,
+  },
 });
 
 export default Header;
