@@ -31,5 +31,10 @@ https://github.com/oblador/react-native-vector-icons#android
   Please let me know if you are having trouble getting the app to run.
 
 ### Results
-#### Side by side comparison (left is my app, right is given)
-![result](/images/react-native-challenge-results.png/) ![screenshot](/images/react-native-challenge.png)  
+
+![result](/images/react-native-challenge-results.png/) 
+
+I definitely tried to make the app look as similar as possible. I know that the icons in the header are slightly different (the ellipsis in the top right corner, the arrow on the top left corner). I am not sure which library to get those exact icons. The images shown in the app are also slightly different, because I do not have the exact same images as the one shown in the sample. Aside from some slight differences, I am happy with the end result but always more room for improvement. Thanks!
+
+-Jerome
+
