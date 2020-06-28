@@ -45,6 +45,8 @@ I definitely tried to make the app look as similar as possible. I know that the 
 
 ![result](/images/comparison.png/) 
 
+#### Conclusion 
+
 The images shown in the app are also slightly different, because I do not have the exact same images as the one shown in the sample. Aside from some slight differences, I am happy with the end result but always more room for improvement. I think it looks very similar =). Thanks!
 
 -Jerome
