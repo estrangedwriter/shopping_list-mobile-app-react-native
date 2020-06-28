@@ -6,11 +6,9 @@
 **
 */
 import React from 'react';
-import { View, FlatList, StyleSheet} from 'react-native';
 import Header from './components/Header';
 import ListItemFollowing from './components/ListItemFollowing';
 import flatlistdata from './data/FlatListData';
-
 
 const App = () => {
 
@@ -18,7 +16,7 @@ const App = () => {
     <View style={styles.container}>
       <Header/>
       <FlatList 
-        data={flatlistdata} r
+        data={flatlistdata} 
         renderItem={({item}) =>  <ListItemFollowing item = {item}/> }
         />
     </View>
@@ -31,6 +29,7 @@ const styles = StyleSheet.create({
     paddingTop: 0,
   },
 });
+
 
 export default App;
 
