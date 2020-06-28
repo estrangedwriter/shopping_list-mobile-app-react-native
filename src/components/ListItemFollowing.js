@@ -8,7 +8,7 @@
 import React from 'react';
 import {Image, View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
-const ListItem = ({item}) => {
+const ListItemFollowing = ({item}) => {
   return (     
     <View style = {styles.listItem}>
         {/* this block of code positions the item name, emoji if any, username if any, and the profile
@@ -190,4 +190,4 @@ listItem: {
             },
 });
 
-export default ListItem;
+export default ListItemFollowing;
