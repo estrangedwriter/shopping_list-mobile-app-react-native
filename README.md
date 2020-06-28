@@ -32,14 +32,19 @@ https://github.com/oblador/react-native-vector-icons#android
   
 ### Problem Solving
 
-I used a ListItem structure, so that it would be easier to display all of the information in an organized and structured format. 
+I built two primary components, a Header component, and a ListView structure/component. I used a ListView structure, so that it would be easier to display all of the information in an organized and structured format. 
+
 ![problemsolving](/images/problem_solving.png/)
+
  - I used a div within the ListItem to store the description, as well as a div container within the div to display figure 1, figure 2, and figure 3 in an organized and neat fashion. 
  - By creating individual containers through which statistical figures can be stored and displayed, the user interface will be able to easily display data.
 
 ### Results
 I definitely tried to make the app look as similar as possible. I know that the icons in the header are slightly different (the ellipsis in the top right corner, the arrow on the top left corner). I am not sure which library to get those exact icons.
+#### Side by side comparison 
+
 ![result](/images/comparison.png/) 
+
 The images shown in the app are also slightly different, because I do not have the exact same images as the one shown in the sample. Aside from some slight differences, I am happy with the end result but always more room for improvement. I think it looks very similar =). Thanks!
 
 -Jerome
