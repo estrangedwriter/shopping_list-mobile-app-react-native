@@ -6,6 +6,7 @@
 **
 */
 import React from 'react';
+import { StyleSheet, View, FlatList} from 'react-native';
 import Header from './components/Header';
 import ListItemFollowing from './components/ListItemFollowing';
 import flatlistdata from './data/FlatListData';

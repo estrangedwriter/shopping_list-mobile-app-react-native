@@ -1,7 +1,7 @@
 /*
 ** Bitbroker Labs React Native Challenge, 2020
 ** 
-** File description: This ListItem.js file contains the CSS components for the application.
+** File description: This global.js file contains the CSS components for the ListView.
 ** 
 **
 */
