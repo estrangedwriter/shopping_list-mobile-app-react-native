@@ -32,7 +32,7 @@ https://github.com/oblador/react-native-vector-icons#android
   
 ### Problem Solving
 
-I built two primary components, a Header component, and a ListView structure/component. I used a ListView structure, so that it would be easier to display all of the information in an organized and structured format. 
+I built two primary components, a Header component, and a ListView structure/component. I used a ListView structure, so that it would be easier to display all of the information in an organized and structured format. Additionally, ListView components are scrollable.
 
 ![problemsolving](/images/problem_solving.png/)
 

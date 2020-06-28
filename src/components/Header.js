@@ -41,7 +41,7 @@ Header.defaultProps = {
 const styles = StyleSheet.create({
 /* primary div for the header component*/  
   header: {
-    height: 100,
+    height: 95,
     backgroundColor: 'white',
     borderBottomWidth: 1,
     borderBottomColor: '#A9A9A9',

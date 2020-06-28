@@ -143,6 +143,7 @@ listItem: {
             color: 'grey',
             top: 3,
             left: 1,
+            fontWeight: 'bold',
         },
         /* div within "textcontainer" that stores the stat figure 1*/
         figure_one_container: {
@@ -185,6 +186,7 @@ listItem: {
                 bottom: 0,
                 left: 1,
                 textAlign: 'left',
+                fontWeight: 'bold',
             },
 });
 
