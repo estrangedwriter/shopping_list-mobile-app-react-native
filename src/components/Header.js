@@ -14,7 +14,9 @@ const Header = ({name, followers, following}) => {
       <View style={styles.header}>
         
         <Text style={styles.name}>{name}</Text>
+
         <Text style={styles.followers}>{followers}</Text>
+
         <Text style={styles.following}>{following}</Text>
         <Icon name="chevron-left" 
             size = {21} 

@@ -8,10 +8,9 @@
 import React from 'react';
 import { View, FlatList, StyleSheet} from 'react-native';
 import Header from './components/Header';
-import ListItemFollowers from './components/ListItemFollowing';
+import ListItemFollowing from './components/ListItemFollowing';
 import flatlistdata from './data/FlatListData';
-import 'react-native-gesture-handler';
-import Navigator from './routes/homeStack';
+
 
 const App = () => {
 
@@ -19,8 +18,8 @@ const App = () => {
     <View style={styles.container}>
       <Header/>
       <FlatList 
-        data={flatlistdata} 
-        renderItem={({item}) =>  <ListItemFollowers item = {item}/> }
+        data={flatlistdata} r
+        renderItem={({item}) =>  <ListItemFollowing item = {item}/> }
         />
     </View>
   );
