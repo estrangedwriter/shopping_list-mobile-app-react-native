@@ -129,11 +129,11 @@ listItem: {
     textcontainer: {
         backgroundColor: 'white',
         borderColor: 'blue',
-        borderWidth: 0,
+        borderWidth: 1,
         position: 'absolute',
         height: 75,
-        width: 300,
-        right: 33,
+        width: 310,
+        left: 80,
         bottom: 5,
         elevation: 0,
     },
@@ -148,7 +148,7 @@ listItem: {
         figure_one_container: {
             backgroundColor: 'white',
             borderColor: 'black',
-            borderWidth: 0,
+            borderWidth: 1,
             position: 'absolute',
             height: 20,
             width: 100,
@@ -159,7 +159,7 @@ listItem: {
         figure_two_container: {
             backgroundColor: 'white',
             borderColor: 'black',
-            borderWidth: 0,
+            borderWidth: 1,
             position: 'absolute',
             height: 20,
             width: 100,
@@ -170,7 +170,7 @@ listItem: {
         figure_three_container: {
             backgroundColor: 'white',
             borderColor: 'black',
-            borderWidth: 0,
+            borderWidth: 1,
             position: 'absolute',
             height: 20,
             width: 100,
