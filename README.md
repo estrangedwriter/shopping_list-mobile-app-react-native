@@ -41,6 +41,8 @@ I built two primary components, a Header component, and a ListView structure/com
  - I used a div within the ListItem to store the description, as well as a div container within the div to display figure 1, figure 2, and figure 3 in an organized and neat fashion. 
  - By creating individual containers through which statistical figures can be stored and displayed, the user interface will be able to easily display data.
 
+![solving_problems.png](/images/solving_problems.png/)
+
 ### Results
 I definitely tried to make the app look as similar as possible. I know that the icons in the header are slightly different (the ellipsis in the top right corner, the arrow on the top left corner). I am not sure which library to get those exact icons.
 #### Side by side comparison 
